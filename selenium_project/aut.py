@@ -77,4 +77,4 @@ def buy_sell(action,user_name,password):
 
 
 
-buy_sell('Buy',2020094320,'klp@98415GH')
+buy_sell('Buy',2020094320,'')

@@ -18,7 +18,7 @@ if macd == 'Y' or macd == 'y':
     print(get_data(ta))
 
 if trade == 'Y' or trade == 'y':
-    action = input("B:Buy|S:Sell")
+    action = input("Buy:Buy|Sell:Sell")
     user_name = input("username")
     password = input("password")
     shares = int(input("number of shares"))

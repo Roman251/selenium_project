@@ -5,6 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 def buy_sell(action,user_name,password):
+   
     print("Input the captcha yourself for now")
 
     driver = webdriver.Chrome(executable_path="/Users/romanregmi/Desktop/selenium_project/driver/chromedriver")
@@ -23,7 +24,6 @@ def buy_sell(action,user_name,password):
     # 
     # time.sleep(10)
     # =============================================================================
-
 
 
     # =============================================================================
@@ -66,7 +66,7 @@ def buy_sell(action,user_name,password):
     driver.implicitly_wait(10)
     
 
-    if action == "B":
+    if action == "Buy":
         driver.find_elements(By.XPATH, '//label[@class="xtoggler-btn-wrapper"]')[1].click()
     else:
         driver.find_elements(By.XPATH, '//label[@class="xtoggler-btn-wrapper"]')[0].click()
@@ -77,4 +77,5 @@ def buy_sell(action,user_name,password):
 
 
 
-buy_sell('Buy',2020094320,'')
+# buy_sell('Buy',,'') --> input your user_id and password
+
